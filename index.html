@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Assignment</title>
+</head>
+<body>
+    <form action="#" method="post"> <!-- Added a form tag with method -->
+        <div>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname">
+        </div>
+
+        <div>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+        </div>
+        
+        <div>
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address">
+        </div>
+        
+        <div>
+            <label for="state-of-origin">State of Origin</label>
+            <select id="state-of-origin" name="state-of-origin">
+                <option value="abia">Abia</option>
+                <option value="adamawa">Adamawa</option>
+                <option value="akwaibom">Akwa Ibom</option>
+                <option value="anambra">Anambra</option>
+                <option value="bauchi">Bauchi</option>
+                <option value="bayelsa">Bayelsa</option>
+                <option value="benue">Benue</option>
+                <option value="bornu">Borno</option>
+                <option value="crossriver">Cross River</option>
+                <option value="delta">Delta</option>
+                <option value="ekiti">Ekiti</option>
+                <option value="edo">Edo</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="telephone">Telephone Number</label>
+            <input type="tel" id="telephone" name="telephone">
+        </div>
+        
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        
+        <div>
+            <label for="education">Highest Level of Education</label>
+            <select id="education" name="education">
+                <option value="basic">Basic Education</option>
+                <option value="secondary">Secondary</option>
+                <option value="tertiary">Tertiary</option>
+                <option value="postgraduate">Post Graduate</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+        
+        <div>
+            <label for="interests">Choose your Interests:</label>
+            <input list="interests-datalist" id="interests" name="interests">
+            <datalist id="interests-datalist">
+                <option value="sports">
+                <option value="agriculture">
+                <option value="social-welfare">
+                <option value="media">
+                <option value="education">
+                <option value="legal">
+                <option value="employment-technical">
+                <option value="arts-culture-tourism">
+                <option value="youth-enterprise-business">
+            </datalist>
+        </div>
+        
+        <div>
+            <label>Additional Interests:</label>
+            <label><input type="checkbox" name="interests" value="agriculture"> Agriculture Development</label>
+            <label><input type="checkbox" name="interests" value="social-welfare"> Socials and Welfare</label>
+            <label><input type="checkbox" name="interests" value="media"> Media and Publicity</label>
+            <label><input type="checkbox" name="interests" value="education"> Education and Training</label>
+            <label><input type="checkbox" name="interests" value="legal"> Legal and Human Rights</label>
+            <label><input type="checkbox" name="interests" value="employment-technical"> Employment and Technical Skills</label>
+            <label><input type="checkbox" name="interests" value="arts-culture-tourism"> Arts Culture and Tourism</label>
+            <label><input type="checkbox" name="interests" value="youth-enterprise-business"> Youth Enterprise and Business</label>
+        </div>
+        
+        <div>
+            <label for="expectations">Expectations:</label>
+            <textarea name="expectations" id="expectations" rows="4" cols="50"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Submit</button> <!-- Added a submit button -->
+        </div>
+    </form>
+</body>
+</html>
